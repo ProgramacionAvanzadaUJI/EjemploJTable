@@ -14,8 +14,9 @@ public class ModeloTabla extends AbstractTableModel {
         this.datos = datos;
     }
 
-    public void setDatos(final List<Persona> datos) {
+    public ModeloTabla setDatos(final List<Persona> datos) {
         this.datos = datos;
+        return this;
     }
 
     public int getRowCount() {

@@ -6,6 +6,7 @@ import tabla.ModeloTabla;
 import tabla.Tabla;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,11 @@ public class Main {
 
     private void ejemploJTable() {
         JFrame ventana = new JFrame("Ejemplo JTable");
-        ventana.getContentPane().add(new JScrollPane(new Tabla(new ModeloTabla(generaListaPersonas()))));
+        Tabla tabla = new Tabla(new ModeloTabla(generaListaPersonas()));
+        ventana.getContentPane().add(new JScrollPane(tabla));
+        JButton boton = new JButton("Nuevos");
+        boton.addActionListener(e -> tabla.setModel(new ModeloTabla(generaListaPersonas())));
+        ventana.getContentPane().add(boton, BorderLayout.SOUTH);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.pack();
         ventana.setVisible(true);

@@ -16,6 +16,13 @@
         <hamcreast.library>2.2</hamcreast.library>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <build>
         <finalName>EjemploJTable</finalName>
         <plugins>
@@ -25,8 +32,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <target>8</target>
-                    <source>8</source>
+                    <target>${java.version}</target>
+                    <source>${java.version}</source>
                 </configuration>
             </plugin>
 
@@ -76,6 +83,12 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.TallerIngenieriaDelSoftware</groupId>
+            <artifactId>GeneradorDatosINE</artifactId>
+            <version>v1.0.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>

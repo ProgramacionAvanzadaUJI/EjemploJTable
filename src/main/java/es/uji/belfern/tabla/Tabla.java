@@ -1,4 +1,4 @@
-package tabla;
+package es.uji.belfern.tabla;
 
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;

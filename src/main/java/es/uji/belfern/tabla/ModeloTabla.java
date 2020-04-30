@@ -1,6 +1,6 @@
-package tabla;
+package es.uji.belfern.tabla;
 
-import datos.Persona;
+import es.uji.belfern.datos.Persona;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.Arrays;

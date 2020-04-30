@@ -1,9 +1,9 @@
-package main;
+package es.uji.belfern.main;
 
-import datos.Persona;
+import es.uji.belfern.datos.Persona;
 import es.uji.www.GeneradorDatosINE;
-import tabla.ModeloTabla;
-import tabla.Tabla;
+import es.uji.belfern.tabla.ModeloTabla;
+import es.uji.belfern.tabla.Tabla;
 
 import javax.swing.*;
 import java.awt.*;

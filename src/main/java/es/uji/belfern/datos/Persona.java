@@ -1,4 +1,4 @@
-package datos;
+package es.uji.belfern.datos;
 
 public class Persona {
     public String nombre;

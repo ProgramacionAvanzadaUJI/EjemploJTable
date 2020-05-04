@@ -21,7 +21,8 @@ public class Main {
         ModeloTabla modeloTabla = new ModeloTabla(generaListaPersonas());
         Tabla tabla = new Tabla(modeloTabla);
         ventana.getContentPane().add(new JScrollPane(tabla));
-        JButton boton = new JButton("Nuevos");
+        JButton boton = new JButton("Actualizar tabla");
+        // Para cambiar los datos que muestra la tabla, hay que setear un nuevo modelo.
         boton.addActionListener(e -> tabla.setModel(new ModeloTabla(generaListaPersonas())));
         ventana.getContentPane().add(boton, BorderLayout.SOUTH);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
